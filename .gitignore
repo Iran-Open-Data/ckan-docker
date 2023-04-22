@@ -1,6 +1,7 @@
 # generic
 .DS_Store
 .vagrant
+.env
 
 # code & config
 _service-provider/*
