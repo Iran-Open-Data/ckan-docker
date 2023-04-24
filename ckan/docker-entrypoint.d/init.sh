@@ -7,3 +7,5 @@ ckan config-tool /srv/app/ckan.ini "ckan.site_intro_text = Welcome to CKAN for S
 ckan config-tool /srv/app/ckan.ini "ckan.locales_offered = en fa_IR"
 ckan config-tool /srv/app/ckan.ini "ckan.locale_order = en fa_IR"
 ckan config-tool /srv/app/ckan.ini "ckan.display_timezone = Asia/Tehran"
+ckan config-tool /srv/app/ckan.ini "ckan.auth.public_activity_stream_detail = true"
+ckan config-tool /srv/app/ckan.ini "ckan.auth.allow_dataset_collaborators = true"
