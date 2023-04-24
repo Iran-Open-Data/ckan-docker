@@ -9,6 +9,13 @@ RUN echo ${TZ} > /etc/timezone
 ### example_theme ###
 RUN  pip3 install -e git+https://github.com/TerseTears/ckanext-example_theme.git#egg=ckanext-example_theme
 
+### hierarchy ###
+RUN pip3 install -e "git+https://github.com/davidread/ckanext-hierarchy.git#egg=ckanext-hierarchy" && \
+      pip3 install -r ${APP_DIR}/src/ckanext-hierarchy/requirements.txt
+
+### showcase ###
+RUN pip install ckanext-showcase
+
 COPY docker-entrypoint.d/* /docker-entrypoint.d/
 
 # Make sure both files are not exactly the same
