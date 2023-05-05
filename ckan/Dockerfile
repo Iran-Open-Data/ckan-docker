@@ -16,6 +16,10 @@ RUN pip3 install -e "git+https://github.com/davidread/ckanext-hierarchy.git#egg=
 ### showcase ###
 RUN pip install ckanext-showcase
 
+### Add translations ###
+ADD --chown=ckan:root https://raw.githubusercontent.com/Iran-Open-Data/ckan-translation/main/ckan.po  https://raw.githubusercontent.com/Iran-Open-Data/ckan-translation/main/ckan.mo /srv/app/src/ckan/ckan/i18n/fa_IR/LC_MESSAGES
+
+### Add scripts to execute on start ###
 COPY docker-entrypoint.d/* /docker-entrypoint.d/
 
 # Make sure both files are not exactly the same
