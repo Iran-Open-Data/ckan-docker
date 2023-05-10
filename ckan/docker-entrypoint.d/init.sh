@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ckan config-tool /srv/app/ckan.ini "ckan.site_url = https://data.gsmedb.ir"
-ckan config-tool /srv/app/ckan.ini "ckan.plugins = envvars image_view text_view recline_view datastore datapusher activity example_theme showcase hierarchy_display hierarchy_form hierarchy_group_form"
+ckan config-tool /srv/app/ckan.ini "ckan.plugins = envvars image_view text_view recline_view datastore datapusher activity example_theme showcase hierarchy_display hierarchy_form hierarchy_group_form recline_grid_view"
 
 ckan config-tool /srv/app/ckan.ini "ckan.site_title = SDAC CKAN"
 ckan config-tool /srv/app/ckan.ini "ckan.site_description = CKAN repository for Sharif Data Analysis Center"
