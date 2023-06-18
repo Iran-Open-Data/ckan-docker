@@ -13,9 +13,6 @@ RUN  pip3 install -e git+https://github.com/TerseTears/ckanext-example_theme.git
 RUN pip3 install -e "git+https://github.com/davidread/ckanext-hierarchy.git#egg=ckanext-hierarchy" && \
       pip3 install -r ${APP_DIR}/src/ckanext-hierarchy/requirements.txt
 
-### showcase ###
-RUN pip install ckanext-showcase
-
 ### Add translations ###
 ADD --chown=ckan:root https://raw.githubusercontent.com/Iran-Open-Data/ckan-translation/main/ckan.po  https://raw.githubusercontent.com/Iran-Open-Data/ckan-translation/main/ckan.mo /srv/app/src/ckan/ckan/i18n/fa_IR/LC_MESSAGES
 
