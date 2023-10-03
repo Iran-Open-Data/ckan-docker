@@ -12,4 +12,6 @@ ckan config-tool /srv/app/ckan.ini "ckan.display_timezone = Asia/Tehran"
 ckan config-tool /srv/app/ckan.ini "ckan.auth.public_activity_stream_detail = true"
 ckan config-tool /srv/app/ckan.ini "ckan.activity_streams_email_notifications = true"
 ckan config-tool /srv/app/ckan.ini "ckan.auth.allow_dataset_collaborators = true"
+ckan config-tool /srv/app/ckan.ini "ckan.max_resource_size = 1050"
+ckan config-tool /srv/app/ckan.ini "ckan.max_image_size = 15"
 
